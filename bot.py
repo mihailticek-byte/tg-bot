@@ -2,7 +2,9 @@
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ConversationHandler, ContextTypes
 
-TOKEN = "8530520631:AAFiF4z3mKhsV5akZ6D-nkoX0r8FwPkdhFA"
+import os
+TOKEN = os.getenv("TOKEN")
+
 OWNER_ID = -1003585110947
 
 SERVICE, DATE, TIME, NAME, PHONE = range(5)
